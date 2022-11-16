@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function generarLista(vec, tipo = '<ul>'){
+            let lista = tipo;
+            for (let i = 0; i < vec.length; i++) 
+                lista += `<li>${vec[i]}</li>`; 
+                if (tipo == '<ul>') 
+                    lista  += '</ul>';
+                 else 
+                    lista  += '</ol>'
+                        return lista;
+            
+                }
+                const op1 = ['Opcion 1', 'Opcion 2', 'Opcion 3', 'Opcion 4', 'Opcion 5'];
+                document.write(generarLista(op1));
+
+                const op2 = ['Opcion a', 'Opcion b', 'Opcion c', 'Opcion d', 'Opcion e'];
+                document.write(generarLista(op2, '<ol>'));   
+    </script>
+    
+</body>
+</html>
