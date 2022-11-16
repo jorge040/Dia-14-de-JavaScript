@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function Uno(x){
+            function Dos(y){
+                document.write('Parametro de la funcion exterior: ' + x + '<br>');
+                document.write('Parametros de la duncion: ' + y + '<br>');
+                document.write('Variable local de la funcion exterior: ' + z + '<br>');
+            }
+            let z = 1;
+            Dos(2);
+        }
+        Uno(2);
+    </script>
+    
+</body>
+</html>
